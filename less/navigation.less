@@ -1,17 +1,22 @@
 nav {
   display: flex;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+
   justify-content: space-between;
   padding: 1.5rem 2rem;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 999;
+  margin: 0 auto;
+
 
   @media @mobile{
     flex-direction: column;
   }
 
   h2{
-    color: #9f50be;
+    color: @element;
     @media @mobile{
       text-align: center;
     }
@@ -31,14 +36,14 @@ nav {
 
     a {
       text-decoration: none;
-      color: #6fbe50 ;
+      color: @text ;
       font-size: 1.6rem;
-      border-radius: 15px;
+
       padding: 5px;
 
       &:hover{
-        background-color:#6fbe50;
         color: white;
+        border-bottom: 3px solid @element;
 
 
 

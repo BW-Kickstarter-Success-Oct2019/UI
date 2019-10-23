@@ -4,18 +4,24 @@
   text-align: center;
   padding: 30% 0;
 
+
+
   h1 {
 
-    color: #9f50be;
+    color: @element;
     position: relative;
     z-index: 2;
+    @media @mobile{
+    padding-top: 10%;
+  }
   }
 
   p {
-    color: @font-color;
+
     font-size: 2rem;
     position: relative;
     z-index: 2;
+
   }
 
   img {
@@ -25,10 +31,15 @@
     width: 100%;
     height: auto;
     opacity: 0.2;
+    padding-top: 7rem;
+    @media @mobile{
+     padding-top: 11rem;
+    }
+
   }
 }
 
-.features {
+.features{
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -47,7 +58,8 @@
 
     }
   }
-  img{
+  i{
+    color: @element;
     width: 15%;
     margin: 7% auto ;
     @media @mobile {
@@ -55,7 +67,7 @@
     }
   }
   h4{
-    color: #6fbe50;
+    color: @text;
     font-size: 2.5rem;
     margin: 7% auto;
 
@@ -70,9 +82,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: @main-bg;
+  background-color: @bg;
   text-align: center;
   padding: 4rem 0 ;
+  h2{
+    color: @element;
+  }
 
   h2{
     font-size: 4rem;
@@ -84,13 +99,27 @@
 
   div {
     width: 23%;
+    margin-bottom:5rem;
+
+    p{
+      font-family: 'Indie Flower';
+      font-size: 2rem;
+    }
     @media @mobile{
       width: 50%;
+
     }
     img{
-      border-radius: 30px;
+      border: 8px solid white;
+      border-radius: 100%;
       width: 80%;
       height: 80%;
+      margin-bottom:2rem;
+      box-shadow: 4px 4px 7px gray;
+
+      &:hover{
+        opacity: 0.6;
+      }
 
     }
   }
