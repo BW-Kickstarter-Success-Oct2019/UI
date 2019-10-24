@@ -209,7 +209,7 @@ nav .nav-bar {
   justify-content: space-between;
   width: 40%;
   text-align: left;
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 0;
 }
 @media (max-width: 600px) {
   nav .nav-bar {
@@ -227,6 +227,7 @@ nav .nav-bar a:hover {
   border-bottom: 3px solid #9f50be;
 }
 footer {
+  background-color: #bce1ad;
   text-align: center;
   padding: 2rem;
 }
@@ -269,7 +270,7 @@ footer {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding: 10% 5% ;
+  padding: 10% 5%;
 }
 @media (max-width: 600px) {
   .features {
@@ -283,14 +284,14 @@ footer {
 @media (max-width: 600px) {
   .features div {
     width: 100%;
-    padding: 0 3rem 4rem ;
+    padding: 0 3rem 4rem;
     margin-bottom: 3rem;
   }
 }
 .features i {
   color: #9f50be;
   width: 15%;
-  margin: 7% auto ;
+  margin: 7% auto;
 }
 @media (max-width: 600px) {
   .features i {
@@ -313,7 +314,7 @@ footer {
   justify-content: space-between;
   background-color: #bce1ad;
   text-align: center;
-  padding: 4rem 0 ;
+  padding: 10rem 1rem;
 }
 .about h2 {
   color: #9f50be;
@@ -346,4 +347,47 @@ footer {
 }
 .about div img:hover {
   opacity: 0.6;
+}
+.contact {
+  display: flex;
+  padding: 1rem 3rem;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 600px) {
+  .contact .contact-img {
+    display: none;
+  }
+}
+.contact .contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.contact .contact-container input[type=text],
+.contact .contact-container select,
+.contact .contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.contact .contact-container input[type=submit] {
+  background-color: #9f50be;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact .contact-container input[type=submit]:hover {
+  background-color: white;
+  color: #9f50be;
+  border: 1px solid #9f50be;
 }
