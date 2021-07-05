@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 999;
+  margin: 0 auto;
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  h2 {
+    color: @element;
+    @media @mobile {
+      text-align: center;
+    }
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    text-align: left;
+    padding: 1.5rem 0 0;
+    @media @mobile {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: @text;
+      font-size: 1.6rem;
+      padding: 5px;
+
+      &:hover {
+        color: white;
+        border-bottom: 3px solid @element;
+      }
+    }
+  }
+}
